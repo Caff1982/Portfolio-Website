@@ -52,12 +52,12 @@
         <a href="#!">
           <img src="img/projects/project1.jpg" alt="Project">
         </a>
-        <a href="#" id="modalBtn" class="btn-light">
+        <a href="#" id="modalBtnOne" class="btn-light">
           <i class="fas fa-eye"></i> PyChess
         </a>
-        <div id="simpleModal" class="modal">
+        <div id="simpleModalOne" class="modal">
           <div class="modal-content">
-            <span class="closeBtn">&times;</span>
+            <span id="closeBtnOne" class="closeBtn">&times;</span>
             <p>Python Chess was a project I made that uses a min-max algorithm with alpha-beta pruning. The decision function uses piece values and piece tables to get the best move. Games can be played against the AI or human</p>
           </div>
         </div>
@@ -71,21 +71,33 @@
         <a href="#!">
           <img src="img/projects/project2.jpg" alt="Project">
         </a>
-        <a href="#" class="btn-light">
+        <a href="#" id="modalBtnTwo" class="btn-light">
           <i class="fas fa-eye"></i> Football Predictions
         </a>
+        <div id="simpleModalTwo" class="modal">
+          <div class="modal-content">
+            <span id="closeBtnTwo" class="closeBtn">&times;</span>
+            <p>For this project I scraped football-data.com website for English Premier League stats. I then used pandas to extract features from the data and train a machine learning model. I have been able to get around 54% accuracy. I plan on updating this as the season progresses to see how many results the model accuratley predicted.</p>
+          </div>
+        </div>
         <a href="#" class="btn-dark">
           <i class="fab fa-github"></i> Github
         </a>
       </div>
 
       <div class="item">
-        <a href="#!S">
+        <a href="#!">
           <img src="img/projects/project3.jpg" alt="Project">
         </a>
-        <a href="#" class="btn-light">
+        <a href="#" id="modalBtnThree" class="btn-light">
           <i class="fas fa-eye"></i> Discogs Cover Search
         </a>
+        <div id="simpleModalThree" class="modal">
+          <div class="modal-content">
+            <span id="closeBtnThree" class="closeBtn">&times;</span>
+            <p>This is a project I created to help a friend who was transferring his record collection from vinyl to digital. It first reads headers from a csv file to create search params and confirms this with the user. Then is uses OAuth to create a connection to Discogs API. It then uses these params to search the Discogs database for corresponding covers and saves these. </p>
+          </div>
+        </div>
         <a href="https://github.com/Caff1982/Discogs-Cover-Search" class="btn-dark">
           <i class="fab fa-github"></i> Github
         </a>
@@ -95,9 +107,15 @@
         <a href="#!">
           <img src="img/projects/project4.jpg" alt="Project">
         </a>
-        <a href="#" class="btn-light">
+        <a href="#" id="modalBtnFour" class="btn-light">
           <i class="fas fa-eye"></i> Temperature Monitor
         </a>
+        <div id="simpleModalFour" class="modal">
+          <div class="modal-content">
+            <span id="closeBtnFour" class="closeBtn">&times;</span>
+            <p>This is simple application to monitor system device temperatures on Linux systems. I used PyQt5 for the GUI. It allows users to log temperatures to a csv file. This simple applicatiton could easily be changed to throttle controls, or monitor temps from and externel source, etc.</p>
+          </div>
+        </div>
         <a href="https://github.com/Caff1982/Temperature-Monitor" class="btn-dark">
           <i class="fab fa-github"></i> Github
         </a>

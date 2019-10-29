@@ -35,32 +35,75 @@ function toggleMenu() {
 
 
 // Get modal elements
-var modal  = document.getElementById('simpleModal');
-// Get open modal button
-var modalBtn = document.getElementById('modalBtn');
-// Get close button
-var closeBtn = document.getElementsByClassName('closeBtn')[0];
+var modalOne  = document.getElementById('simpleModalOne');
+var modalTwo = document.getElementById('simpleModalTwo');
+var modalThree  = document.getElementById('simpleModalThree');
+var modalFour  = document.getElementById('simpleModalFour');
+// Get the button that opens the modal
+var modalBtnOne = document.getElementById('modalBtnOne');
+var modalBtnTwo = document.getElementById('modalBtnTwo');
+var modalBtnThree = document.getElementById('modalBtnThree');
+var modalBtnFour = document.getElementById('modalBtnFour');
+// Get close buttons
+var closeBtnOne = document.getElementById('closeBtnOne');
+var closeBtnTwo = document.getElementById('closeBtnTwo');
+var closeBtnThree = document.getElementById('closeBtnThree');
+var closeBtnFour = document.getElementById('closeBtnFour');
 
 // listen for open click
-modalBtn.addEventListener('click', openModal);
+modalBtnOne.addEventListener('click', openModalOne);
+modalBtnTwo.addEventListener('click', openModalTwo);
+modalBtnThree.addEventListener('click', openModalThree);
+modalBtnFour.addEventListener('click', openModalFour);
 // listen for close click
-closeBtn.addEventListener('click', closeModal);
+closeBtnOne.addEventListener('click', closeModalOne);
+closeBtnTwo.addEventListener('click', closeModalTwo);
+closeBtnThree.addEventListener('click', closeModalThree);
+closeBtnFour.addEventListener('click', closeModalFour);
 // Listen for outside click
 window.addEventListener('click', outsideClick);
 
-// function to open modal
-function openModal(){
-  modal.style.display = 'block';
+// function to open modal popups
+function openModalOne(){
+  modalOne.style.display = 'block';
+}
+function openModalTwo(){
+  modalTwo.style.display = 'block';
+}
+function openModalThree(){
+  modalThree.style.display = 'block';
+}
+function openModalFour(){
+  modalFour.style.display = 'block';
 }
 
-// function to close modal
-function closeModal(){
-  modal.style.display = 'none';
+// function to close modals
+function closeModalOne(){
+  modalOne.style.display = 'none';
 }
+function closeModalTwo(){
+  modalTwo.style.display = 'none';
+}
+function closeModalThree(){
+  modalThree.style.display = 'none';
+}
+function closeModalFour(){
+  modalFour.style.display = 'none';
+}
+
 
 // function to close modal if outside click
 function outsideClick(e){
-  if(e.target == modal){
-    modal.style.display = 'none';
+  if(e.target == modalOne){
+    modalOne.style.display = 'none';
+  }
+  if(e.target == modalTwo){
+    modalTwo.style.display = 'none';
+  }
+  if(e.target == modalThree){
+    modalThree.style.display = 'none';
+  }
+  if(e.target == modalFour){
+    modalFour.style.display = 'none';
   }
 }
