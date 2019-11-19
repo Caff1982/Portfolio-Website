@@ -32,10 +32,6 @@
         <li class="nav-item current">
           <a href="work.html" class="nav-link">Portfolio</a>
         </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link">Contact</a>
-        </li>
-
       </ul>
     </nav>
   </header>
@@ -50,34 +46,53 @@
     <div class="projects">
       <div class="item">
         <a href="#!">
-          <img src="img/projects/project1.jpg" alt="Project">
+          <img src="img/projects/PyChess.jpg" alt="Project">
         </a>
-        <a href="#" id="modalBtnOne" class="btn-light">
+        <div id="modalBtnOne" class="btn-light">
           <i class="fas fa-eye"></i> PyChess
-        </a>
+        </div>
         <div id="simpleModalOne" class="modal">
           <div class="modal-content">
-            <span id="closeBtnOne" class="closeBtn">&times;</span>
-            <p>Python Chess was a project I made that uses a min-max algorithm with alpha-beta pruning. The decision function uses piece values and piece tables to get the best move. Games can be played against the AI or human</p>
+            <div class="modal-header">
+              <span id="closeBtnOne" class="closeBtn text-secondary">&times;</span>
+              <h2 class="text-secondary">PyChess</h2>   
+            </div>
+            <div class="modal-body">
+              <p>PyChess was a project I made which allows players to play against an AI or each other. I created this to learn more about the algorithms involved in such games. The AI uses a Minimax algorithm to get the best move, I also used alpha-beta pruning to improve efficiency. The decision function uses piece-values and piece-tables to get the best move. For the GUI I used PyGame.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="https://github.com/Caff1982/PyChess" class="modal-link">
+                <i class="fab fa-github"></i>Github
+              </a>
+            </div>  
           </div>
         </div>
         <a href="https://github.com/Caff1982/PyChess" class="btn-dark">
           <i class="fab fa-github"></i> Github
         </a>
-
       </div>
 
       <div class="item">
         <a href="#!">
-          <img src="img/projects/project2.jpg" alt="Project">
+          <img src="img/projects/football_img.jpg" alt="Project">
         </a>
         <a href="#" id="modalBtnTwo" class="btn-light">
           <i class="fas fa-eye"></i> Football Predictions
         </a>
         <div id="simpleModalTwo" class="modal">
           <div class="modal-content">
-            <span id="closeBtnTwo" class="closeBtn">&times;</span>
-            <p>For this project I scraped football-data.com website for English Premier League stats. I then used pandas to extract features from the data and train a machine learning model. I have been able to get around 54% accuracy. I plan on updating this as the season progresses to see how many results the model accuratley predicted.</p>
+            <div class="modal-header">
+              <span id="closeBtnTwo" class="closeBtn text-secondary">&times;</span>
+              <h2 class="text-secondary">Football Predictions</h2>   
+            </div>
+            <div class="modal-body">
+              <p>For this project I scraped football-data.com website for English Premier League stats. I then used pandas to extract features from the data and train a machine learning model. I have been able to get around 54% accuracy. I plan on updating this as the season progresses to see how many results the model accuratley predicted.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#" class="modal-link">
+                <i class="fab fa-github"></i>Github
+              </a>
+            </div>  
           </div>
         </div>
         <a href="#" class="btn-dark">
@@ -87,15 +102,25 @@
 
       <div class="item">
         <a href="#!">
-          <img src="img/projects/project3.jpg" alt="Project">
+          <img src="img/projects/album_covers.jpg" alt="Project">
         </a>
         <a href="#" id="modalBtnThree" class="btn-light">
           <i class="fas fa-eye"></i> Discogs Cover Search
         </a>
         <div id="simpleModalThree" class="modal">
           <div class="modal-content">
-            <span id="closeBtnThree" class="closeBtn">&times;</span>
-            <p>This is a project I created to help a friend who was transferring his record collection from vinyl to digital. It first reads headers from a csv file to create search params and confirms this with the user. Then is uses OAuth to create a connection to Discogs API. It then uses these params to search the Discogs database for corresponding covers and saves these. </p>
+            <div class="modal-header">
+              <span id="closeBtnThree" class="closeBtn text-secondary">&times;</span>
+              <h2 class="text-secondary">Discogs Cover Search</h2>   
+            </div>
+            <div class="modal-body">
+              <p>This is a project I created to help a friend who was transferring his record collection from vinyl to digital. It first reads headers from a csv file to create search params and confirms this with the user. Then is uses OAuth to create a connection to Discogs API. It then uses these params to search the Discogs database for corresponding covers and saves these. </p>
+            </div>
+            <div class="modal-footer">
+              <a href="https://github.com/Caff1982/Discogs-Cover-Search" class="modal-link">
+                <i class="fab fa-github"></i>Github
+              </a>
+            </div>  
           </div>
         </div>
         <a href="https://github.com/Caff1982/Discogs-Cover-Search" class="btn-dark">
@@ -112,8 +137,18 @@
         </a>
         <div id="simpleModalFour" class="modal">
           <div class="modal-content">
-            <span id="closeBtnFour" class="closeBtn">&times;</span>
-            <p>This is simple application to monitor system device temperatures on Linux systems. I used PyQt5 for the GUI. It allows users to log temperatures to a csv file. This simple applicatiton could easily be changed to throttle controls, or monitor temps from and externel source, etc.</p>
+            <div class="modal-header">
+              <span id="closeBtnFour" class="closeBtn text-secondary">&times;</span>
+              <h2 class="text-secondary">Discogs Cover Search</h2>   
+            </div>
+            <div class="modal-body">
+              <p>This is simple application to monitor system device temperatures on Linux systems. I used PyQt5 for the GUI. It allows users to log temperatures to a csv file. This simple applicatiton could easily be changed to throttle controls, or monitor temps from and externel source, etc.</p>
+            </div>
+            <div class="modal-footer">
+              <a href="https://github.com/Caff1982/Temperature-Monitor" class="modal-link">
+                <i class="fab fa-github"></i>Github
+              </a>
+            </div>  
           </div>
         </div>
         <a href="https://github.com/Caff1982/Temperature-Monitor" class="btn-dark">
@@ -126,16 +161,24 @@
 
   <footer id="main-footer">
     <div class="footer-item">
-      &copy; 2018 Stephen Cafferty
+      &copy; 2019 Stephen Cafferty
     </div>
     <div class="footer-item">
       <div class="footer-contact">
-        Email: stephencafferty@hotmail.com        
+        Email: <a class="footer-link" href="mailto:stephencafferty@hotmail.com">stephencafferty@hotmail.com</a>        
       </div>
       <div class="footer-contact">
-        Tel: +447526793700
+        Tel: <a href="Tel: +447526793700" class="footer-link">+447526793700</a>
       </div>
-    </div>     
+    </div>
+    <div class="footer-item">
+      <div class="footer-contact">
+        <a class="footer-icon-link" href="https://github.com/Caff1982"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a class="footer-icon-link" href="https://github.com/Caff1982"><i class="fab fa-github fa-2x"></i></a>
+        <a class="footer-icon-link" href="https://github.com/Caff1982"><i class="fas fa-address-card fa-2x"></i></a>
+        <a class="footer-icon-link" href="https://github.com/Caff1982"><i class="far fa-envelope fa-2x"></i></a>
+      </div>
+    </div>  
   </footer>
 
   <script src="js/main.js"></script>
